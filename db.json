@@ -1,58 +1,74 @@
 {
-	"assets":[
+    "assets": [
         {
             "id": 0,
-			"$id": "asset_0",
+            "name": "Asset 0",
+            "creationDate": "2019/04/30 8:30:00",
+            "children": [
+                {
+                    "id": 1,
+                    "name": "Asset 1",
+                    "creationDate": "2019/04/30 8:30:00",
+                    "children": [],
+                    "signals": [
+                        {
+                            "id": 0,
+                            "tag": "TAG0",
+                            "dataType": 0,
+                            "dataSource": "CIC-MockDB",
+                            "isActive": true,
+                            "isLocked": false,
+                            "creationDate": "2019/04/30 8:30:00"
+                        }
+                    ]
+                }
+            ],
+            "signals": [
+                {
+                    "id": 0,
+                    "tag": "TAG0",
+                    "dataType": 0,
+                    "dataSource": "CIC-MockDB",
+                    "isActive": true,
+                    "isLocked": false,
+                    "creationDate": "2019/04/30 8:30:00"
+                }
+            ]
+        },
+        {
+            "id": 1,
             "name": "Asset 1",
             "creationDate": "2019/04/30 8:30:00",
             "children": [
                 {
-                    "$ref":"asset_1"
+                    "id": 2,
+                    "name": "Asset 2",
+                    "creationDate": "2019/04/30 8:30:00",
+                    "children": [],
+                    "signals": [
+                        {
+                            "id": 1,
+                            "tag": "TAG1",
+                            "dataType": 0,
+                            "dataSource": "CIC-MockDB",
+                            "isActive": true,
+                            "isLocked": false,
+                            "creationDate": "2019/04/30 8:30:00"
+                        }
+                    ]
                 }
             ],
-			"signals":[
-				{
-					"$ref": "signal_0"
-				},
-				{
-					"$ref": "signal_3"
-				}
-			]
-		},
-		{
-            "id": 1,
-			"$id": "asset_1",
-            "name": "Asset 2",
-            "creationDate": "2019/04/30 8:30:00",
-            "children": [
-            ],
-			"signals":[
-				{
-					"$ref": "signal_2"
-				}
-			]
-		}
-	],
-	"signals":[
-		{
-			"id": 0,
-			"$id":"signal_0",
-			"name": "CICA0"
-		},
-		{
-			"id": 1,
-			"$id":"signal_1",
-			"name": "CICA1"
-		},
-		{
-			"id": 2,
-			"$id":"signal_2",
-			"name": "CICA2"
-		},
-		{
-			"id": 3,
-			"$id":"signal_3",
-			"name": "CICA3"
-		}
-	]
+            "signals": [
+                {
+                    "id": 2,
+                    "tag": "TAG2",
+                    "dataType": 0,
+                    "dataSource": "CIC-MockDB",
+                    "isActive": true,
+                    "isLocked": false,
+                    "creationDate": "2019/04/30 8:30:00"
+                }
+            ]
+        }
+    ]
 }
